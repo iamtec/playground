@@ -1,0 +1,130 @@
+#big-guy {
+	padding: 250px 20px 100px;
+	background-image: radial-gradient(16px at -180px 60%, #ff7200 30px, rgba(0, 0, 0, 0) 579px);
+	background-attachment: fixed;
+	.row  {
+		max-width: none;
+
+	}
+	h1 {
+		color: #ff7200;
+		font-size: 300px;
+		position: fixed;
+		top: 0;
+		left: 0;
+		line-height: 250px;
+
+	}
+	p {
+		position: relative;
+		font-weight: bold;
+
+	}
+	#border {
+		content: '';
+		position: fixed;
+		top:0;
+		right: 0;
+		left:0;
+		bottom: 0;
+		border: 5px solid #ff7200;
+	}
+}
+#pink-guy {
+	background: #ff00a2;
+	padding: 250px 20px 100px;
+	.row  {
+		max-width: none;
+
+	}
+	h1 {
+		color: #fff;
+		font-size: 700px;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		font-weight: bold;
+		line-height: 560px;
+
+	}
+	p {
+		position: relative;
+		font-weight: bold;
+
+	}
+}
+
+#pink-guy-mask {
+	background: #ff00a2;
+	padding: 250px 20px 100px;
+	a {
+		display: block;
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 200;
+	}
+	#border {
+		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		background: black;
+		-webkit-mask-image: url(../assets/images/hockey.png);
+		-webkit-mask-position: bottom center;
+		z-index: 190;
+	}
+	.row  {
+		max-width: none;
+
+	}
+	p {
+		display: none;
+	}
+	h1 {
+		color: #fff;
+		font-size: 700px;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		font-weight: bold;
+		line-height: 560px;
+
+	}
+	p {
+		position: relative;
+		font-weight: bold;
+
+	}
+}
+
+#animation {
+	background:#00f0ff;
+	#ri{
+		background: url(../assets/images/ri1-col.gif);
+		background-size: contain; 
+		position: fixed;
+		left: 0;
+		right: 0;
+		top:0;
+		bottom: 0;
+		-webkit-mask-image: url(../assets/images/ri2.gif);
+		-webkit-mask-position: center center;
+		-webkit-mask-size: contain;
+	}
+}
+
+@media #{$small-only} { 
+	#big-guy {
+		h1 {
+			font-size: 150px;
+			line-height: 125px;
+		}
+	}
+	#pink-guy {
+
+	}
+}
